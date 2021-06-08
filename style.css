@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*****Header*****/
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
+  gap: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 8px;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+/*****Mobilversion_forside*****/
+#forside {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(1x/splashbillede.jpg);
+  background-position: 76%;
+}
+
+#forside .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1.2fr 1fr;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 7vw;
+  margin-left: 14px;
+  margin-top: 115px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+/*****Desktop_forside*****/
+@media (min-width: 1200px) {
+  #forside {
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  #forside .section_wrapper {
+    display: grid;
+    grid-template-columns: 60fr 1fr 1fr;
+    grid-template-rows: 3.5fr 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 36vw;
+    margin-left: 0;
+    margin-top: 0;
+    font-family: "Luckiest Guy", cursive;
+  }
+}
