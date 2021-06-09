@@ -5,14 +5,12 @@
 }
 
 /*****Header*****/
-header {
-  position: sticky;
-  top: 0;
-  padding: 1rem 1rem;
-  gap: 20px;
+
+#menu {
+  background-color: black;
 }
 
-nav ul {
+/* header nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -20,6 +18,10 @@ nav ul {
   padding-bottom: 8px;
   gap: 30px;
   overflow-x: auto;
+} */
+
+a {
+  color: white;
 }
 
 /*****Mobilversion_forside*****/
@@ -48,6 +50,49 @@ h1 {
 
 /*****Desktop_forside*****/
 @media (min-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    padding: 1rem 1rem;
+    gap: 10px;
+    background-color: black;
+    /* position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
+  gap: 20px;
+  background-color: black; */
+  }
+
+  header nav {
+    display: flex;
+    justify-content: right;
+  }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    gap: 50px;
+    margin-right: 25px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: futura-pt, sans-serif;
+  }
+
+  a:hover {
+    background-color: red;
+  }
+
   #forside {
     background-position: center;
     width: 100%;
@@ -64,7 +109,7 @@ h1 {
   h1 {
     font-size: 1.5rem;
     text-align: center;
-    line-height: 36vw;
+    line-height: 35vw;
     margin-left: 0;
     margin-top: 0;
     font-family: "Luckiest Guy", cursive;
