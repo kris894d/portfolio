@@ -201,7 +201,7 @@ main {
     font-family: futura-pt, sans-serif;
   }
 
-  a:hover {
+  header a:hover {
     background-color: red;
   }
 
