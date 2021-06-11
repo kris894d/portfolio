@@ -10,16 +10,6 @@
   background-color: black;
 }
 
-/* header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  padding-bottom: 8px;
-  gap: 30px;
-  overflow-x: auto;
-} */
-
 a {
   color: white;
 }
@@ -60,10 +50,11 @@ h1 {
   text-align: center;
   line-height: 7vw;
   margin-left: 14px;
-  margin-top: 115px;
   font-family: "Luckiest Guy", cursive;
+  padding-top: 20px;
 }
 
+/*****Portfolio*****/
 .doku_wrapper {
   padding: 10px;
 }
@@ -88,17 +79,18 @@ img {
   height: 100%;
   padding: 5vw;
   box-shadow: 0vw 0vw 5vw gray;
+  border-radius: 15px;
 }
 
-h1 {
+.doku h1 {
   text-align: center;
   line-height: 7vw;
   margin-left: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   font-family: "Luckiest Guy", cursive;
 }
 
-p {
+.doku p {
   text-align: center;
   font-family: futura-pt, sans-serif;
   margin-top: 8px;
@@ -111,7 +103,7 @@ p {
 }
 
 .mere_knap #read {
-  background-color: #430a08;
+  background-color: black;
   border: none;
   color: white;
   padding: 13px 90px;
@@ -126,7 +118,12 @@ p {
   font-family: futura-pt, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  transition: 2s ease-in-out;
+  transition: background-color 0.2s ease-in, box-shadow 0.1s ease-out;
+}
+
+#read:hover {
+  background-color: red;
+  box-shadow: inset 1px 1px 3px 2px black;
 }
 
 a {
@@ -137,13 +134,30 @@ a {
   text-align: center;
   line-height: 6vw;
   margin-left: 12px;
-  margin-top: 109px;
+  margin-top: 100px;
   font-family: "Luckiest Guy", cursive;
 }
 
 main {
   background-image: url(img/Baggrund.jpg);
   background-size: cover;
+}
+
+/*****Tjek det ud*****/
+.web_wrapper {
+  padding: 10px;
+}
+
+.web_wrapper .kol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2vw;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
 }
 
 /*****Desktop_forside*****/
@@ -218,7 +232,7 @@ main {
     grid-template-rows: 0.5fr 2fr 1fr;
   }
 
-  h1 {
+  .doku h1 {
     font-size: 1.5rem;
     text-align: center;
     line-height: 7vw;
@@ -251,5 +265,48 @@ main {
     padding: 1vw;
     box-shadow: none;
     border-radius: 20px;
+  }
+
+  /*****Styling af "tjek det ud"*****/
+  .web_wrapper .kol,
+  .kol1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  .web_wrapper .kol,
+  .kol1,
+  p {
+    font-family: futura-pt, sans-serif;
+    padding: 4px;
+    margin-left: 3vw;
+    margin-right: 2.5vw;
+    margin-top: 5.5vw;
+    text-align: center;
+  }
+
+  .background {
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  main h1 {
+    padding-top: 10px;
+  }
+
+  footer {
+    width: 100vw;
+    background-color: white;
+  }
+  footer img {
+    width: 14%;
+    box-shadow: none;
+    place-content: right;
+    display: flex;
+    margin-left: 5vw;
   }
 }
