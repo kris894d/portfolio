@@ -5,8 +5,20 @@
 }
 
 /*****Header*****/
+header {
+  background-color: black;
+}
+
+#menuknap {
+  color: white;
+  font-size: 55px;
+}
+
 #menu {
   background-color: black;
+  position: absolute;
+  top: 56px;
+  padding: 10px;
 }
 
 a {
@@ -27,10 +39,12 @@ iframe {
 .hidden {
   transform: translateX(-100%);
   opacity: 0;
+  height: 1vh;
 }
 
 #menuknap {
   display: inline-block;
+  font-size: 55px;
 }
 
 #menu {
@@ -211,6 +225,17 @@ h3 {
   font-family: futura, sans-serif;
 }
 
+@media (min-width: 600px) {
+  #menuknap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /*****Desktop_forside*****/
 @media (min-width: 1200px) {
   header {
@@ -227,11 +252,13 @@ h3 {
     padding: 1rem 1rem;
     gap: 20px;
     background-color: black;
+    height: 8vh;
   }
 
   header nav {
     display: flex;
     justify-content: right;
+    color: black;
   }
 
   /*****Burgermenu_desktop*****/
@@ -246,6 +273,7 @@ h3 {
 
   #menu li {
     display: inline-block;
+    list-style: none;
   }
 
   #menu {
@@ -255,10 +283,8 @@ h3 {
     font-size: 1.2rem;
     gap: 50px;
     margin-right: 25px;
-  }
-
-  li {
-    list-style: none;
+    top: 0;
+    margin-top: 25px;
   }
 
   a {
