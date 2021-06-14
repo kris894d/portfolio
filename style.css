@@ -105,6 +105,7 @@ img {
 .mere_knap {
   display: flex;
   place-content: center;
+  margin-top: -18px;
 }
 
 .mere_knap #read {
@@ -163,7 +164,6 @@ main {
 
 h2 {
   text-align: center;
-  margin-top: 30px;
 }
 
 /*****Om_mig*****/
@@ -249,8 +249,12 @@ h2 {
     text-align: center;
     line-height: 7vw;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -25px;
     font-family: "Luckiest Guy", cursive;
+  }
+
+  .doku p {
+    margin-top: -10px;
   }
 
   /*****Styling af grid portfolio*****/
@@ -269,7 +273,6 @@ h2 {
     margin-top: -17px;
     margin-bottom: 13px;
     padding: 4px;
-    line-height: 25px;
   }
 
   .doku_wrapper img {
