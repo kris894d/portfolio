@@ -7,6 +7,7 @@
 /*****Header*****/
 header {
   background-color: black;
+  z-index: 100;
 }
 
 #menuknap {
@@ -225,7 +226,13 @@ h3 {
   font-family: futura, sans-serif;
 }
 
-@media (min-width: 600px) {
+h2 {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
   #menuknap {
     display: none;
   }
@@ -233,32 +240,6 @@ h3 {
   #menu.hidden {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-
-/*****Desktop_forside*****/
-@media (min-width: 1200px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    padding: 1rem 1rem;
-    gap: 10px;
-    background-color: black;
-    position: sticky;
-    top: 0;
-    padding: 1rem 1rem;
-    gap: 20px;
-    background-color: black;
-    height: 8vh;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: right;
-    color: black;
   }
 
   /*****Burgermenu_desktop*****/
@@ -296,6 +277,60 @@ h3 {
     background-color: red;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    padding: 1rem 1rem;
+    gap: 10px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    padding: 1rem 1rem;
+    gap: 20px;
+    background-color: black;
+    height: 8vh;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: right;
+    color: black;
+  }
+
+  /*****Styling af footer*****/
+
+  footer {
+    background-color: black;
+  }
+  footer .social {
+    display: flex;
+    width: 10px;
+    box-shadow: none;
+    padding: 13px;
+    margin-left: 5px;
+    gap: 10px;
+  }
+
+  footer img {
+    padding: 0;
+    height: 63px;
+    box-shadow: none;
+    width: 55px;
+    display: flex;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+/*****Desktop_forside*****/
+@media (min-width: 1200px) {
   #forside {
     background-position: center;
     width: 100%;
@@ -372,28 +407,6 @@ h3 {
 
   main h1 {
     padding-top: 10px;
-  }
-
-  /*****Styling af footer*****/
-
-  footer {
-    background-color: black;
-  }
-  footer .social {
-    display: flex;
-    width: 10px;
-    box-shadow: none;
-    padding: 13px;
-    margin-left: 5px;
-    gap: 10px;
-  }
-
-  footer img {
-    padding: 0;
-    height: 63px;
-    box-shadow: none;
-    width: 55px;
-    display: flex;
   }
 
   h3 {
