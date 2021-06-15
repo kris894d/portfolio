@@ -12,7 +12,7 @@ header {
 
 #menuknap {
   color: white;
-  font-size: 55px;
+  font-size: 3rem;
 }
 
 #menu {
@@ -27,7 +27,7 @@ a {
 }
 
 p {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 iframe {
@@ -45,7 +45,7 @@ iframe {
 
 #menuknap {
   display: inline-block;
-  font-size: 55px;
+  font-size: 3rem;
 }
 
 #menu {
@@ -99,6 +99,7 @@ h1 {
 
 .doku {
   background-color: white;
+  border-radius: 15px;
 }
 
 img {
@@ -141,7 +142,7 @@ img {
   text-align: center;
   text-decoration: none;
   display: flex;
-  font-size: 15px;
+  font-size: 1.1rem;
   margin: 14px 0px;
   cursor: pointer;
   border-radius: 5px;
@@ -245,7 +246,6 @@ h2 {
 
 #mig .info {
   font-family: fututa, sans-serif;
-  line-height: 25px;
   text-align: center;
 }
 
@@ -482,7 +482,7 @@ h3 {
   /* Caption text */
   .text {
     color: black;
-    font-size: 30px;
+    font-size: 1.3rem;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -521,7 +521,5 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    padding-top: 10px;
-    padding-right: 15px;
   }
 }
