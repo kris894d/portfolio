@@ -195,11 +195,22 @@ h2 {
 .mig p {
   text-align: center;
   font-family: futura, sans-serif;
+  text-align: center;
+}
+
+#mig .slideshow-container {
+  max-width: 435px;
+  padding: 15px;
 }
 
 /*****Footer*****/
 footer {
   background-color: black;
+}
+
+footer h3 {
+  color: white;
+  text-align: left;
 }
 
 footer .social {
@@ -230,6 +241,23 @@ h2 {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 15px;
+}
+
+#mig .info {
+  font-family: fututa, sans-serif;
+  line-height: 25px;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  margin-left: 0;
+  text-align: center;
+  padding: 25px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -326,6 +354,30 @@ h2 {
     text-align: center;
     margin-top: 35px;
     margin-bottom: 15px;
+  }
+
+  #mig .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  #mig img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0vw;
+    box-shadow: 0vw 0vw 1vw gray;
+    border-radius: 15px;
+  }
+
+  #mig .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    gap: 10px;
   }
 }
 
@@ -456,5 +508,20 @@ h2 {
 
   .section_wrapper h1 {
     margin-left: 58px;
+  }
+
+  #mig p,
+  h3 {
+    color: black;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #mig .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding-top: 10px;
+    padding-right: 15px;
   }
 }
