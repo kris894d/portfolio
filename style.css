@@ -64,7 +64,7 @@ li {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-image: url(SVG/1x/splashbillede-100.jpg);
+  background-image: url(SVG/1x/splashbillede.webp);
   background-position: 76%;
 }
 
@@ -130,7 +130,8 @@ img {
   text-align: center;
   font-family: futura-pt, sans-serif;
   margin-top: 8px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .mere_knap {
@@ -195,20 +196,25 @@ main {
 
 h2 {
   text-align: center;
+  font-family: futura, sans-serif;
 }
 
 /*****Om_mig*****/
-.mig p {
+#mig p {
   text-align: center;
   font-family: futura, sans-serif;
   text-align: center;
 }
 
 #mig .slideshow-container {
-  max-width: 435px;
-  padding: 15px;
+  max-width: 400px;
+  padding: 25px;
 }
-
+#mig .doku p {
+  padding: 2px;
+  margin-bottom: 0px;
+  margin-top: -2px;
+}
 /*****Footer*****/
 footer {
   background-color: black;
@@ -226,6 +232,7 @@ footer .social {
   padding: 0px;
   margin-left: 21px;
   gap: 10px;
+  margin-top: -32px;
 }
 
 footer img {
@@ -234,6 +241,10 @@ footer img {
   box-shadow: none;
   width: 40px;
   display: flex;
+}
+
+footer h3 {
+  padding: 22px;
 }
 
 h3 {
@@ -252,6 +263,7 @@ h2 {
 #mig .info {
   font-family: fututa, sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 h3 {
@@ -343,7 +355,7 @@ h3 {
     width: 10px;
     box-shadow: none;
     padding: 13px;
-    margin-left: 5px;
+    margin-left: 8px;
     gap: 10px;
   }
 
@@ -411,7 +423,7 @@ h3 {
   }
 
   .doku p {
-    margin-top: -10px;
+    margin-top: -30px;
   }
 
   /*****Styling af grid portfolio*****/
@@ -438,6 +450,7 @@ h3 {
     padding: 1vw;
     box-shadow: none;
     border-radius: 20px;
+    margin-bottom: 14px;
   }
 
   /*****Styling af "tjek det ud"*****/
@@ -458,7 +471,7 @@ h3 {
     padding: 4px;
     margin-left: 3vw;
     margin-right: 2.5vw;
-    margin-top: 5.5vw;
+    margin-top: 0.6vw;
     text-align: center;
   }
 
@@ -526,5 +539,10 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+  }
+
+  /**Design af footer desktop**/
+  footer .social {
+    margin-left: 26px;
   }
 }
